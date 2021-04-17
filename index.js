@@ -20,10 +20,19 @@ return(`Unleash ${dogName} the ${dogBreed}`);
 }
 
 function exerciseDog(dogName, dogBreed) {
+<<<<<<< HEAD
 
   // for (let i=0; i < (routine.lenght-1);i++){
   //   routine[i](dogName, dogBreed);
   //
   // }
   return  routine.map( na => na(dogName, dogBreed) );
+=======
+  const dog= [];
+  for (let i=0; i < (routine.lenght-1);i++){
+    let mes = routine[i](dogName, dogBreed);
+    dog.push(mes);
+  }
+   return dog;
+>>>>>>> d912f1083bc960d890af640459462f8216f98ecc
 }
